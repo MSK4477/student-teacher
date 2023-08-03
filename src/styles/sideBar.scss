@@ -1,0 +1,36 @@
+@import "colors";
+
+aside{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 200px;
+    height: calc(100vh + 100px);
+    background-color:$second;
+    border-top: 3px solid #fa7500;
+
+    >ul {
+        li{
+            a{
+                color: white !important;
+                 font-style: $text1;
+                 margin: 30px;
+                 font: 100 1rem "Helvetica";
+                 font-weight: bolder;
+                 text-shadow: 2px 2px 4px rgba(228, 19, 19, 0.3);
+                 display: flex;
+                 justify-content: space-between;
+
+            }
+            .active{
+                font-weight: bold;
+             border-bottom: 2px solid #fca902;
+
+             }
+            
+        }
+        }
+    }
+
+     
+   
