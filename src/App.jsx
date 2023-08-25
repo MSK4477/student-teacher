@@ -39,8 +39,8 @@ function App() {
 
 {/* //***TEACHERS***\\ */}
 <Route path='/addTeacher' element={<AddTeacher />}/>
-<Route path='/Teacher' element={<Teachers />}/>
-<Route  path='/Teacher/:teacherId' element={<Teacher />} />
+<Route path='/teacher' element={<Teachers />}/>
+<Route  path='/teacher/:teacherId' element={<Teacher />} />
 <Route path="/editTeacher" element={<EditTeacher />} />
 
     </Routes>

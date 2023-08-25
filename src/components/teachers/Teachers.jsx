@@ -29,7 +29,7 @@ const Teachers = () => {
        {data.map((Teacher) => (
         <div  className="details" key={Teacher.Name}>
              <img src={Teacher.Image} alt="Teacher" />
-             <Link to={"/student/"+Teacher.id}  >
+             <Link to={"/teacher/"+Teacher.id}  >
 
              <div style={{color:"#fd4e03",fontWeight:"bold"}}><span style={{color:"black",fontWeight:"bolder"}}>Name:</span> &nbsp; {Teacher.Name}</div>
         <div style={{color:"#fd4e03",fontWeight:"bold"}}><span style={{color:"black",fontWeight:"bolder"}}>D.O.B:</span> &nbsp; {Teacher.DOB}</div>

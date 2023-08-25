@@ -38,24 +38,17 @@ export const createTeacher = async (teacherData) =>{
 }
 export const getTeachers = async () =>{
   const  response = await teacherStudentInstance.get("/teachers");
-  console.log(response.data)
   return response.data
   }
-// export const  getTeacher = async (teacherid) => {
-//   const response = await teacherStudentInstance.get(`/teachers/${teacherid}`)
-//   console.log(response)
-//   return response.data
 
-// }
-// export const getTeacher = async(teacherId) => {
-//   const response = await teacherStudentInstance.get(`/teachers/${teacherId}`)
-//   return response.data
-// } 
-// export const UpdateTeacher =  async (teacherId, teacherData) =>{
-//   const response = await teacherStudentInstance.put(`/teachers/${teacherId}`, teacherData);
-//   console.log(response.data)
-//   return response.data
-// }
+export const getTeacher = async(teacherId) => {
+  const response = await teacherStudentInstance.get(`/teachers/${teacherId}`)
+  return response.data
+} 
+export const UpdateTeacher =  async (teacherId, teacherData) =>{
+  const response = await teacherStudentInstance.put(`/teachers/${teacherId}`, teacherData);
+  return response.data
+}
  export  const deleteTeacher = async (teacherId) => {
   const response = await teacherStudentInstance.delete(`./teachers/${teacherId}`)
   return response.data
