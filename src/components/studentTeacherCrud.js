@@ -33,9 +33,12 @@ export const UpdateStudent = async (studentId, studentData) => {
 // TEACHERS CRUD 
 
 export const createTeacher = async (teacherData) =>{
-  const response =  await teacherStudentInstance.put(`/Teachers/${teacherData}`)
+  const response =  await teacherStudentInstance.post('/teachers',teacherData)
+ console.log(response)
   return response
 }
+
+
 export const getTeachers = async () =>{
   const  response = await teacherStudentInstance.get("/teachers");
   return response.data

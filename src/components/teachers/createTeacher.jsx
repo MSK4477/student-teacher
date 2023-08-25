@@ -27,7 +27,7 @@ setFormData({
 e.preventDefault()
 createTeacher(formData)
 setFormData(initialState)
-navigate("/Teacher")
+navigate("/teacher")
   }
 
 
